@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" >
+
+
+      <li class="nav-item dropdown {% if 'bankapp1' in request.path %} active {% endif %} ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          Branch
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Alappuzha">Alappuzha</a>
+
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Eranakulam">Eranakulam</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Malappuram">Malappuram</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Kozhikode">Kozhikode</a>
+          <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Thiruvananthapuram">Thiruvananthapuram</a>
+<div>
+
+  <style>
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+      <li class="nav-item">
+          <a class="nav-link " role="button" href="register">Register</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link " role="button" style="float:right" href="login">Login</a>
+      </li>
+
+      </li>
+</div>
+
+  </div>
+
+</nav>

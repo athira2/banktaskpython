@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<style>
+  input[type=text], input[type=password] ,input[type=datetime]{
+
+    width: 300px;
+    height: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid ;
+    box-sizing: border-box;
+    }
+    button {
+          background-color: #04AA6D;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: 1px solid ;
+          display: inline-block;
+          width: 20%;
+
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+</style>
+<body style="text-align:center">
+<h2>Form</h2>
+
+<form action="form" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <label for="name"><b>USername</b></label><br>
+        <input type="text" placeholder="Enter name" name="name" required><br>
+
+        <label for="dob"><b>Dob</b></label><br>
+        <input type="date" placeholder="Enter dob" name="dob" required><br>
+
+        <label for="age"><b>age</b></label><br>
+        <input type="number" placeholder="Enter age" name="age" required><br>
+
+<!--        <label for="gender"><b>gender</b></label><br>-->
+<!--        <input type="text" placeholder="Enter Gender" name="gender" required><br>-->
+<p>Gender</p>
+<form>
+    <div>
+       <input type="radio" name="gender" value="male">Male
+       <input type="radio" name="gender" value="female">Female
+       <input type="radio" name="gender" value="other">Other
+    </div>
+</form>
+        <label for="phonenumber"><b>phonenumber</b></label><br>
+        <input type="number" placeholder="Enter phonenumber" name="phonenumber" required><br>
+
+        <label for="mailid"><b>Enter Email</b></label><br>
+        <input type="email" placeholder="Enter Email" name="mailid" required><br>
+
+        <label for="address"><b>Adress</b></label><br>
+        <input type="text" placeholder="Enter Adress" name="address" required><br>
+
+        <label for="district"><b>District</b></label><br>
+            <form action="/action_page.php">
+              <select type="text" name="district" required>
+                <option value="Alappuzha">Alappuzha</option>
+                <option value="Eranakulam">Eranakulam</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="Malappuram">Malappuram</option>
+              </select>
+              <br><br>
+
+            </form>
+
+
+        <label for="branches"><b>Branch</b></label><br>
+            <form action="/action_page.php">
+              <select type="text" name="branches" required>
+                    <option value="branches">Alappuzha</option>
+                  <div>
+                    <option value="Eranakulam">cherthala</option>
+                    <option value="Kozhikode">Town</option>
+                    <option value="Malappuram">Mullakkal</option>
+                  </div>
+
+                  <option value="branches">Eranakulam</option>
+                  <div>
+                    <option value="Eranakulam">kochi</option>
+                    <option value="Kozhikode">vytila</option>
+                    <option value="Malappuram">kalamassery</option>
+                  </div>
+              </select>
+              <br><br>
+
+            </form>
+
+        <label for="accounttype"><b>Account Type</b></label><br>
+            <form action="/action_page.php">
+              <select type="text" name="accounttype" required>
+                <option value="saving">Saving Account</option>
+                <option value="current">Current Account</option>
+
+              </select>
+              <br><br>
+
+            </form>
+
+        <form>
+            <label for="materials"><b>Materials Provided</b></label>
+
+           <input type="checkbox" name="materials" value="debitcard">Debitcard
+           <input type="checkbox" name="materials" value="creditcard">Credit card
+           <input type="checkbox" name="materials" value="chequebook">Cheque book
+        </form>
+<!--          <label for="materials"><b>Materials Provided</b></label><br>-->
+<!--          <input type="checkbox"  name="materials" >-->
+<!--          <label for="materials" value="debitcard"> Debit card</label><br>-->
+<!--          <input type="checkbox"  name="materials" >-->
+<!--          <label for="materials"> Credit card</label><br>-->
+<!--          <input type="checkbox"  name="materials" >-->
+<!--          <label for="materials"> Cheque book</label><br><br>-->
+
+<!--        <input type="text" placeholder="Enter materials" name="materials" required><br>-->
+
+
+            <
+        <button type="submit">Submit</button>
+        <button type="submit" ><a href="/"></a>logout</button>
+    </form>
+    </div>
+
+
+
+</body>
+</html>
